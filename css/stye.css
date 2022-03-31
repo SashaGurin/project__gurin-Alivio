@@ -1,0 +1,194 @@
+/* Reset  ...................................... */
+*,
+*::before,
+*::after {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	box-sizing: border-box;
+}
+
+body,html,footer,h1,h2,h3,h4,p,
+fieldset,form,label,legend,
+ul[class],ol[class],li,
+figure,figcaption,
+blockquote,dl,dd, tr, th, td {
+   margin: 0;
+   padding: 0;
+   border:0;
+   outline:0;
+}
+
+/* Links */
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    color: inherit;
+ }
+
+a, a:visited  {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover  {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+p + p {
+	margin-top: 1em;
+}
+
+ul[class],
+ol[class] {
+   padding: 0;
+}
+
+ul[class],
+ol[class] {
+   list-style: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img, svg {
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Form */
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    vertical-align:middle;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+table {
+   border-collapse:collapse;
+   border-spacing:0;
+}
+
+/* body...................................... */
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #424242;
+}
+
+/* Utility ...................................*/
+.none {
+	display: none !important;
+}
+
+.visually-hidden {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	display: block;
+	margin-left: -10000px;
+	background: transparent;
+	font-size: 0;
+}
+
+/* grid ......................................*/
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+
+/* HEADER .................................... */
+.header {
+  padding: 17px 0px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D6D6D6;
+}
+
+.header__iner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.menu-item:not(:last-child) {
+  margin-right: 72px;
+}
+
+ .menu .menu-link {
+  font-weight: 500;
+  line-height: 120%;
+  color: #292929;
+}
+.login {
+}
+.login__btn {
+}
+.btn-smal {
+}
