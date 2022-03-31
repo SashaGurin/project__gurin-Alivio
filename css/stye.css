@@ -178,17 +178,43 @@ body {
   align-items: center;
 }
 .menu-item:not(:last-child) {
-  margin-right: 72px;
+  margin-right: 70px;
 }
 
- .menu .menu-link {
+.menu .menu-link {
   font-weight: 500;
   line-height: 120%;
   color: #292929;
+  transition: color 0.2s ease;
 }
+.menu .menu-link:hover {
+  color:  #01996D;
+}
+
 .login {
+
 }
-.login__btn {
+.login a+a {
+  margin-left: 35px;
 }
+.login a {
+  color: #000;
+}
+
+.btn {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  color: #FFFFFF !important;
+
+  display: inline-block;
+  padding: 20px 50px ;
+  background: #01996D;
+  border-radius: 4px;
+}
+
 .btn-smal {
+  padding: 13px 50px ;
 }
