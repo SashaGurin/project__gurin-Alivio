@@ -167,11 +167,12 @@ body {
 
 .header__iner {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
 .menu {
+  margin-left: 172px;
 }
 .menu-list {
   display: flex;
@@ -192,6 +193,9 @@ body {
 }
 
 .login {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 
 }
 .login a+a {
@@ -199,9 +203,13 @@ body {
 }
 .login a {
   color: #000;
+  transition: all 0.2s ease;
+}
+.login a:hover {
+  color:#01996D ;
 }
 
-.btn {
+ .btn {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -213,6 +221,11 @@ body {
   padding: 20px 50px ;
   background: #01996D;
   border-radius: 4px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+.btn:hover {
+  opacity: 0.8;
 }
 
 .btn-smal {
