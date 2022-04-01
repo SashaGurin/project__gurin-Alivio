@@ -333,7 +333,7 @@ body {
 }
 
 .works__top {
-  padding-bottom: 52px;
+  margin-bottom: 52px;
 }
 
 .works__top-iner {
@@ -376,4 +376,30 @@ body {
 }
 
 .works__bottom {
+
+}
+.works__bottom-iner {
+  /* display: grid; */
+}
+.works__bottom-item {
+}
+.item {
+  flex: 0 1 390px;
+  max-width: 390px;
+}
+.item__title {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 55px;
+}
+.item__text {
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.item__img {
 }
