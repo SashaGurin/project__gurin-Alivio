@@ -2,167 +2,203 @@
 *,
 *::before,
 *::after {
-	padding: 0px;
-	margin: 0px;
-	border: none;
-	box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
 }
 
-body,html,footer,h1,h2,h3,h4,p,
-fieldset,form,label,legend,
-ul[class],ol[class],li,
-figure,figcaption,
-blockquote,dl,dd, tr, th, td {
-   margin: 0;
-   padding: 0;
-   border:0;
-   outline:0;
+body,
+html,
+footer,
+h1,
+h2,
+h3,
+h4,
+p,
+fieldset,
+form,
+label,
+legend,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
 
 /* Links */
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-    text-decoration: none;
-    color: inherit;
- }
-
-a, a:visited  {
-    color: inherit;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
 }
 
-a:hover  {
-    color: inherit;
-    text-decoration: none;
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 a:focus,
 a:active {
-	outline: none;
+  outline: none;
 }
 
 /* Common */
 
-aside, nav, footer, header, section, main {
-	display: block;
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-size: inherit;
-	font-weight: inherit;
-	line-height: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 p + p {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 ul[class],
 ol[class] {
-   padding: 0;
+  padding: 0;
 }
 
 ul[class],
 ol[class] {
-   list-style: none;
+  list-style: none;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
-img, svg {
-	vertical-align: top;
-	max-width: 100%;
-	height: auto;
+img,
+svg {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Form */
-input, textarea, button, select {
-	font-family: inherit;
-    font-size: inherit;
-    vertical-align:middle;
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  vertical-align: middle;
 }
 
 input::-ms-clear {
-	display: none;
+  display: none;
 }
 
-button, input[type="submit"] {
-    display: inline-block;
-    box-shadow: none;
-    background-color: transparent;
-    background: none;
-    cursor: pointer;
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
 }
 
-input:focus, input:active,
-button:focus, button:active {
-    outline: none;
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }
 
 label {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 legend {
-	display: block;
+  display: block;
 }
 
 table {
-   border-collapse:collapse;
-   border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* body...................................... */
 body {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 1.5;
-	color: #424242;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #424242;
 }
 
 /* Utility ...................................*/
 .none {
-	display: none !important;
+  display: none !important;
 }
 
 .visually-hidden {
-	position: absolute;
-	opacity: 0;
-	visibility: hidden;
-	width: 0px;
-	height: 0px;
-	display: block;
-	margin-left: -10000px;
-	background: transparent;
-	font-size: 0;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+  font-size: 0;
 }
 
-/* grid ......................................*/
+/* Grid - container ......................................*/
 .container {
   width: 100%;
   max-width: 1400px;
   padding: 0 15px;
   margin: 0 auto;
-
 }
 
-/* HEADER .................................... */
+/* Header .................................... */
 .header {
   padding: 17px 0px;
-  background: #FFFFFF;
-  border-bottom: 1px solid #D6D6D6;
+  background: #ffffff;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .header__iner {
@@ -173,11 +209,14 @@ body {
 
 .menu {
   margin-left: 172px;
+  /* margin-right: 30px; */
 }
+
 .menu-list {
   display: flex;
   align-items: center;
 }
+
 .menu-item:not(:last-child) {
   margin-right: 70px;
 }
@@ -187,47 +226,154 @@ body {
   line-height: 120%;
   color: #292929;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
+
 .menu .menu-link:hover {
-  color:  #01996D;
+  color: #01996d;
 }
 
 .login {
   display: flex;
   align-items: center;
   margin-left: auto;
-
 }
-.login a+a {
+
+.login a + a {
   margin-left: 35px;
 }
+
 .login a {
   color: #000;
   transition: all 0.2s ease;
-}
-.login a:hover {
-  color:#01996D ;
+  white-space: nowrap;
 }
 
- .btn {
-  font-family: 'Lato';
+.login a:hover {
+  color: #01996d;
+}
+
+.btn {
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 125%;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 
   display: inline-block;
-  padding: 20px 50px ;
-  background: #01996D;
+  padding: 20px 50px;
+  background: #01996d;
   border-radius: 4px;
   transition: opacity 0.3s ease;
   opacity: 1;
 }
+
 .btn:hover {
   opacity: 0.8;
 }
 
 .btn-smal {
-  padding: 13px 50px ;
+  padding: 13px 50px;
+}
+
+/* Section Baner */
+.baner {
+  position: relative;
+  min-height: 895px;
+  padding: 175px 0px;
+}
+
+.baner__content {
+  max-width: 440px;
+}
+
+.baner__content > *:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.baner__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 113%;
+  color: #01996d;
+}
+
+.baner__text p {
+  line-height: 155%;
+  color: #484848;
+}
+
+.baner__content .baner__text {
+  max-width: 420px;
+  margin-bottom: 53px;
+}
+
+.baner__img {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.baner__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* section Works ......................... */
+.works {
+  padding: 169px 0px 51px;
+}
+
+.works__top {
+  padding-bottom: 52px;
+}
+
+.works__top-iner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  max-width: 584px;
+}
+
+.title-top {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 157%;
+}
+
+.works__top-title .title-top {
+  margin-bottom: -2px;
+}
+
+.title-bottom {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+  color: #01996d;
+}
+
+.works__top-content {
+  max-width: 671px;
+  padding-top: 58px;
+}
+
+.works__top-content P {
+  font-weight: 500;
+  line-height: 150%;
+  width: 100%;
+}
+
+.works__bottom {
 }
