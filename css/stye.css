@@ -379,7 +379,10 @@ body {
 
 }
 .works__bottom-iner {
-  /* display: grid; */
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 390px 392px 390px ;
+  gr
 }
 .works__bottom-item {
 }
@@ -388,6 +391,7 @@ body {
   max-width: 390px;
 }
 .item__title {
+  position: relative;
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 700;
@@ -395,7 +399,22 @@ body {
   line-height: 150%;
   color: #000000;
   margin-bottom: 55px;
+  padding-top: 135px;
+  padding-left: 88px;
 }
+.item__title ::before {
+  content: attr(data-canter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 150%;
+  color: rgba(1, 153, 109, 0.2);
+}
+
 .item__text {
   font-weight: 500;
   margin-bottom: 50px;
