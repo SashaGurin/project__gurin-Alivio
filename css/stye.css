@@ -193,6 +193,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .container-story {
   max-width: 1537px;
 }
@@ -379,29 +380,33 @@ body {
 }
 
 .works__bottom {
-
 }
+
 .works__bottom-iner {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: 390px 392px 390px ;
-
+  grid-template-columns: 390px 392px 390px;
 }
+
 .works__bottom-item {
 }
+
 .item {
   flex: 0 1 390px;
   max-width: 390px;
 }
+
 .item:nth-child(2) {
   padding-top: 287px;
 }
+
 .item:nth-child(3) {
   padding-top: 54px;
 }
+
 .item__title {
   position: relative;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -412,18 +417,21 @@ body {
   padding-left: 88px;
   white-space: nowrap;
 }
+
 .item__title.title-two {
   padding-left: 79px;
 }
+
 .item__title.title-three {
   padding-left: 124px;
 }
+
 .item__title ::before {
   content: attr(data-canter);
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 150px;
@@ -438,7 +446,7 @@ body {
 
 .item__img {
   width: 100%;
-  height:492px ;
+  height: 492px;
 }
 
 .item__img img {
@@ -449,25 +457,26 @@ body {
 /* Secton STORY ............... */
 .story {
   background: #245852;
-  padding: 229px 0px 177px ;
+  padding: 229px 0px 177px;
 }
 
 .story__iner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.story__iner-content {
 
-  color: #FFFFFF;
-  padding-top: 81px;
+.story__iner-content {
+  color: #ffffff;
   max-width: 580px;
 }
 
-.story__iner-content >*:not(:last-child) {
+.story__iner-content > *:not(:last-child) {
   margin-bottom: 33px;
 }
+
 .story__title {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -483,13 +492,14 @@ body {
 
 .story__iner-video {
   position: relative;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
-  z-index: 5;
+  width: 895px;
 }
-.story__iner-video  img {
-  border-radius: 16px;
+
+.story-video__wrapper {
+  position: relative;
+  padding-top: 57.7%;
 }
+
 .rentagle-black {
   position: absolute;
   top: 0;
@@ -497,5 +507,160 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: 22;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.story__iner-video:hover .rentagle-black {
+  opacity: 0;
+}
+
+.story-video {
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.story-btn {
+  width: 82px;
+  height: 82px;
+  z-index: 23;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* section roduct ....... */
+.product {
+  padding-top: 120px;
+  padding-bottom: 168px;
+}
+
+.product__iner {
+  display: flex;
+  justify-content: space-between;
+}
+.product__iner-left {
+  position: relative;
+  padding-left: 61px;
+  padding-bottom: 74px;
+  margin-right: 40px;
+}
+
+.product__img {
+  border-radius: 18px;
+}
+
+.product__card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 296px;
+  /* height: 293px; */
+  padding: 22px 20px 30px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25);
+  border-radius: 4px;
+}
+
+.card__title {
+  font-weight: 600;
+  display: inline-block;
+  font-size: 14.49px;
+  line-height: 157%;
+  color: #000000;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #000;
+}
+
+.card-avatar {
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+.avatar-img {
+  width: 57px;
+  height: 57px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar-name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 157%;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.card__content {
+  text-align: left;
+  color: #000000;
+}
+
+.card__content-title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 157%;
+  margin-bottom: 16px;
+}
+
+.card__list-item {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 157%;
+  list-style-type: disc;
+  list-style-position:inside ;
+  /* padding-left: 6px */
+}
+
+.card__list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.product__text {
+  padding: 20px 0px 40px;
+  max-width: 530px;
+}
+.product__text p {
+  line-height: 155%;
+}
+
+/* Footer .......................... */
+.footer {
+  background: #245852;
+  padding: 104px 0px 144px;
+}
+
+.footer__logo {
+  margin-bottom: 74px;
+}
+
+.footer__nav-list li+li {
+  margin-top: 60px;
+}
+
+.footer__nav-link {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 120%;
+  color: #FFFFFF;
 }
