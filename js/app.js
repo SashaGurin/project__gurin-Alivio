@@ -1,0 +1,1 @@
+jsannotations.hideDiagnostics
