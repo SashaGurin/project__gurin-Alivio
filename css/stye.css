@@ -352,6 +352,7 @@ body {
   font-size: 24px;
   line-height: 157%;
 }
+
 .works__top-title {
   margin-right: 30px;
 }
@@ -386,11 +387,6 @@ body {
   grid-template-columns: repeat(auto-fit, 390px);
   column-gap: 50px;
 }
-
-/* .item {
-  flex: 0 1 390px;
-  max-width: 390px;
-} */
 
 .item:nth-child(2) {
   padding-top: 287px;
@@ -448,6 +444,7 @@ body {
 .item__img img {
   width: 100%;
   height: 100%;
+  border-radius: 0px 0px 18px 18px;
 }
 
 /* Secton Story ...................... */
@@ -669,38 +666,57 @@ body {
 .footer__nav-link:hover {
   opacity: 0.7;
 }
-@media (max-width: 1360px) {
+
+/* Meedia @ ......................... */
+@media (max-width: 1321px) {
   .title-bottom {
     font-size: 40px;
     line-height: 140%;
   }
+
   .story {
     padding: 130px 0px 145px;
   }
+
   .story__title {
-    font-size: 33px;
+    font-size: 40px;
+  }
+
+  .item:nth-child(3) {
+    padding-top: 0px;
+    margin-top: -200px;
+  }
+  .story__text p {
+    font-size: 22px;
   }
 }
 
-/* Meedia @ ......................... */
 @media (max-width: 1199px) {
   .menu {
     margin-left: 85px;
   }
+
   .menu-item:not(:last-child) {
     margin-right: 35px;
   }
+
   .login a + a {
     margin-left: 25px;
   }
+
   .works__top-iner {
     flex-direction: column;
   }
+
   .works {
     padding: 90px 0px 51px;
   }
+
   .story {
     padding: 100px 0px 115px;
+  }
+  .story__title {
+    font-size: 33px;
   }
 
   .story__text p {
@@ -709,8 +725,16 @@ body {
     line-height: 130%;
     margin-bottom: 0px;
   }
+
   .story__iner-content > *:not(:last-child) {
     margin-bottom: 25px;
+  }
+  .title-bottom {
+    font-size: 33px;
+  }
+  .product__iner-left {
+    flex: 1 0 auto;
+    flex-basis: 60%;
   }
 }
 
@@ -718,15 +742,20 @@ body {
   .baner__img img {
     opacity: 0.65;
   }
+
   .baner {
     min-height: 625px;
   }
-  body {
+
+  body,
+  p {
     font-size: 18px;
   }
+
   .works {
     padding: 100px 0px 51px;
   }
+
   .item:nth-child(2) {
     padding-top: 26px;
   }
@@ -734,17 +763,59 @@ body {
   .item:nth-child(3) {
     padding-top: 5px;
   }
+
   .works__top {
     margin-bottom: 15px;
   }
+
   .story {
-    padding: 70px 0px 85px;
+    padding: 70px 0px 70px;
   }
+
   .story__iner {
     flex-direction: column;
   }
+
   .story__iner-content {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
+    margin-right: 0px;
+    max-width: 100%;
+  }
+
+  .story__title {
+    line-height: 110%;
+  }
+
+  .item:nth-child(3) {
+    padding-top: 20px;
+    margin-top: 0px;
+  }
+  .product__iner {
+    flex-direction: column-reverse;
+  }
+  .product__iner-left {
+    margin: 0 auto;
+  }
+  .product__iner-right {
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+  .product {
+    padding-top: 70px;
+    padding-bottom: 68px;
+  }
+  .product__text {
+    padding: 20px 0px 25px;
+    max-width: 100%;
+  }
+  .title {
+    max-width: 100%;
+  }
+  .footer__logo + * {
+    margin-top: 54px;
+  }
+  .footer__nav-list li + li {
+    margin-top: 35px;
   }
 }
 
@@ -753,39 +824,78 @@ body {
     min-height: 425px;
     padding: 75px 0px;
   }
+
   .baner__title {
     font-size: 50px;
     line-height: 100%;
   }
+
   .btn {
     font-size: 16px;
     padding: 18px 30px;
   }
+
   .title-bottom {
     font-size: 30px;
     max-width: 399px;
   }
+
   .works {
     padding: 80px 0px 51px;
   }
+
   .works__top {
     margin-bottom: 25px;
   }
+
   .baner__content .baner__text {
     max-width: 399px;
     margin-bottom: 30px;
   }
-}
-@media (max-width: 489px) {
-  .story__iner-content {
-    margin-bottom: 20px;
+  .product {
+    padding-top: 70px;
+    padding-bottom: 82px;
   }
+  .product__card {
+    bottom: -120px;
+  }
+  .footer__nav-list li + li {
+    margin-top: 20px;
+  }
+  .footer__nav-link {
+    font-size: 20px;
+    line-height: 100%;
+    transition: all 0.3s ease;
+}
+}
+
+@media (max-width: 489px) {
   .story__title {
     font-size: 28px;
   }
+
   .story__text p {
     font-size: 14px;
-    line-height: 20%;
+    line-height: 120%;
+  }
+
+  .story {
+    padding: 45px 0px 55px;
+  }
+
+  .story__iner-content {
+    margin-top: 40px;
+  }
+  .story-btn {
+    max-width: 20%;
+  }
+  .product__iner-left {
+    padding-left: 0px;
+  }
+  .product__card {
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -794,11 +904,20 @@ body {
     grid-template-columns: 1fr;
     column-gap: 0px;
   }
+
   .title-two h4 {
     font-size: 20px;
   }
+
   .item__img {
     width: 100%;
     height: 380px;
+  }
+  .product__card {
+    top: 55%;
+  }
+  .card {
+    width: 230px;
+    padding: 10px 20px 15px;
   }
 }
