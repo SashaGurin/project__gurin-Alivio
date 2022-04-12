@@ -186,6 +186,10 @@ body {
   font-size: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Grid container .......................*/
 .container {
   width: 100%;
