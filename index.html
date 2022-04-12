@@ -11,12 +11,14 @@
   </head>
 
   <body>
-    <header class="header none">
+    <header class="header">
       <div class="container">
         <div class="header__iner">
+
           <div class="header__iner-logo">
             <a href="#"><img src="./img/Logo.svg" alt="logo" /></a>
           </div>
+
           <nav class="header__iner-menu menu">
             <ul class="menu-list">
               <li class="menu-item">
@@ -33,16 +35,55 @@
               </li>
             </ul>
           </nav>
+
           <div class="header__iner-login login">
             <a href="#">Sign in</a>
             <a href="#" class="btn btn-smal">Start Trial</a>
           </div>
+
+          <button type="button" class="mobile-nav-button" >
+            <span class="mobile-nav-button__icon" ></span>
+          </button>
+
         </div>
       </div>
     </header>
 
+    <!-- Mobile nav  ............................. -->
+    <div id="mobile__nav" class="mobile__nav">
+
+      <div class="mobile__nav-logo">
+        <a href="#"><img src="./img/Logo.svg" alt="logo" /></a>
+      </div>
+
+      <nav class="mobile__nav-menu">
+        <ul class="mobile__nav-list">
+          <li class="mobile__nav-item">
+            <a href="#" class="menu-link">Why Alivio</a>
+          </li>
+          <li class="mobile__nav-item">
+            <a href="#" class="menu-link">Solutions</a>
+          </li>
+          <li class="mobile__nav-item">
+            <a href="#" class="menu-link">Community</a>
+          </li>
+          <li class="mobile__nav-item">
+            <a href="#" class="menu-link">Pricing</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile__nav-login">
+        <a href="#">Sign in</a>
+        <a href="#" class="btn btn-smal">Start Trial</a>
+      </div>
+
+    </div> <!-- /mobile__nav -->
+
+
+    <!-- MAIN ..................................... -->
     <main>
-      <!-- section  baner ..................................................... -->
+      <!-- section  baner ..................................... -->
       <section class="baner">
         <div class="container">
           <div class="baner__content">
@@ -62,7 +103,7 @@
         </div>
       </section>
 
-      <!-- section  worcks  ................................................. -->
+      <!-- section  worcks  .................................. -->
       <section class="works">
         <div class="container">
           <div class="works__top">
@@ -134,7 +175,7 @@
       </section>
       <!-- /section  works -->
 
-      <!-- section  story .................................................... -->
+      <!-- section  story ............................... -->
       <section class="story">
         <div class="container container-story">
           <div class="story__iner">
@@ -241,5 +282,6 @@
         </nav>
       </div>
     </footer>
+    <script src="./js/app.js" ></script>
   </body>
 </html>
