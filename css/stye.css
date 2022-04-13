@@ -508,7 +508,7 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 22;
-  opacity: 1;
+  /* opacity: 1; */
   transition: opacity 0.4s ease;
   border-radius: 21px;
 }
@@ -517,15 +517,10 @@ body {
 }
 
 
-
-/* .story__iner-video:hover .rentagle-black {
-  opacity: 0;
-} */
-
 .story-video {
   border-radius: 16px;
   max-width: 100%;
-  height: 100%;
+  height: auto;
   vertical-align: top;
 }
 
@@ -1018,7 +1013,6 @@ body {
 
   .product__card {
     bottom: -120px;
-    po
   }
 
   .footer__nav-list li+li {

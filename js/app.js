@@ -34,6 +34,6 @@ videoBtn.addEventListener("click", function () {
     videoFile.pause();
     videoBtnicon.src = "./img/play-white.svg";
     videoOverlay.onmouseleave = null;
-    // videoOverlay.onmouseenter = null;
+    videoOverlay.onmouseenter = null;
   }
 });
